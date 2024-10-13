@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mini game</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="screen active" id="start-screen">
+      <h1>Welcome to the Game!</h1>
+      <p class="game-description">
+        Click on the shapes that appear on the screen before the time runs out! Each shape you click adds to your score.
+      </p>
+      <a href="#" id="game-start" class="game-start">Start Game</a>
+    </div>
+
+    <div class="screen" id="time-selection-screen">
+      <h1>Select Time</h1>
+      <ul id="time-options">
+        <li class="time-choice" data-time="10">10 seconds</li>
+        <li class="time-choice" data-time="20">20 seconds</li>
+        <li class="time-choice" data-time="30">30 seconds</li>
+      </ul>
+    </div>
+
+    <div class="screen" id="game-screen">
+      <div id="play-area"></div>
+      <div id="game-time" class="hide">00:00</div>
+    </div>
+
+    <div class="screen" id="result-section">
+      <h1>Results</h1>
+      <div id="final-score"></div>
+      <button id="restart-btn">Play Again</button>
+      <button id="reset-scores-btn">Reset Scores</button>
+      <ul id="score-list"></ul>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
