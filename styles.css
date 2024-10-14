@@ -176,3 +176,17 @@ a.game-start:hover {
 .animate-shape {
   animation: float 2s infinite ease-in-out;
 }
+
+.footer {
+  padding-block: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #ffe819;
+}
+
+.footer-icon {
+  display: inline-block;
+  inline-size: 30px;
+  block-size: 30px;
+}
